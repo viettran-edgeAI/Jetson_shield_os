@@ -188,7 +188,7 @@ void LCD1::showPowerOffEffect(const char* label, uint32_t nowMs) {
         drawCenteredTextLine(0, "HIGH HUMIDITY", 21);
     }
 
-    drawCenteredTextLine(static_cast<int16_t>(_height > 16 ? (_height - 10) : 0), _statusLabel, 16);
+    drawCenteredTextLine(static_cast<int16_t>(_height > 16 ? (_height/2 - 3) : 0), _statusLabel, 16);
     _display->display();
 }
 
